@@ -38,6 +38,8 @@ checkButton.addEventListener("click", () => {
     }
     //Comparing random number with input and updating score/highscore
     if (currentValidNumber === randomNumberValue) {
+        valueCurrentScore++;
+        currentScoreSelector.textContent = valueCurrentScore;
         checkHighScore(valueCurrentScore);
         valueCurrentScore = 0;
         //Debug
