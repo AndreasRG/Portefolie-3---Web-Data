@@ -38,8 +38,8 @@ checkButton.addEventListener("click", () => {
     }
     //Comparing random number with input and updating score/highscore
     if (currentValidNumber === randomNumberValue) {
+        checkHighScore(valueCurrentScore);
         valueCurrentScore = 0;
-        checkHighScore();
         //Debug
         console.log("true they are same");
     }
@@ -54,13 +54,15 @@ checkButton.addEventListener("click", () => {
 })
 
 
-const checkHighScore = () => {
+const checkHighScore = (scoreValue) => {
     if (valueCurrentHighscore == 0 || valueCurrentScore < valueCurrentHighscore) {
-        currentHighscoreSelector.textContent = valueCurrentScore;
-
+        valueCurrentHighscore = valueCurrentScore;
+        console.clear();
+        currentHighscoreSelector.textContent = scoreValue;
+        console.log(`NEW HIGHSCORE ${scoreValue}`);
+    }
+    else {
+        console.clear();
+        console.log("NO NEW Highscore");
     }
 }
-
-
-//Debug:
-console.log(currentHighscoreSelector.textContent);
