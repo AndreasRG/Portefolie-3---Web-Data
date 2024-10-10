@@ -1,4 +1,4 @@
-/*DATABASE DESIGN EXCSERSISES:*/
+/*DATABASE DESIGN EXCERSISES:*/
 
 
 /*We create the database "escaperoom":*/

@@ -1,4 +1,4 @@
-/*QUERY DATA EXCERSIES:*/
+/*QUERY DATA EXCERSISES:*/
 
 
 /*I use the database "world"*/
@@ -61,7 +61,7 @@ ORDER BY GNP DESC;
 
 
 /*Task 8)*/
-/*Assuming neighboor realtion is in a seperate neighbor table:*/
+/*Assuming neighbor relation is in a separate neighbor table:*/
 SELECT country.`Code`, country.`name` AS CountryName, country.GNP
 FROM country
 WHERE country.GNP > (
